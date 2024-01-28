@@ -1,0 +1,55 @@
+#resume {
+    position: relative;
+    padding: 30px;
+    background-image: url('assets/story-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    z-index: 0;
+}
+
+#story-bg-character {
+    position: fixed;
+    top: 100px;
+    left: 0;
+    z-index: 1;
+}
+
+#resume-container {
+    position: relative;
+    width: 50%;
+    margin: 30px auto;
+    background-color: rgba(204, 193, 190, 0.20);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    padding: 20px 5%;
+    z-index: 200;
+}
+
+#resume-container p {
+    text-align: justify;
+}
+
+@media screen and (max-width: 768px) {
+    #resume {
+        padding: 5% 1%;
+    }
+
+    #story-bg-character {
+        display: none;
+    }
+
+    #resume-container {
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        padding: 20px 5%;
+        margin-bottom: 80px;
+    }
+
+    #resume-container h3 {
+        font-size: 1.1rem;
+    }
+    
+}

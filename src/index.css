@@ -1,0 +1,79 @@
+:root {
+  width: 100%;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+
+  color: white;
+  background-color: #280601;
+  background-image: url('/assets/background-ap.png');
+  background-size: cover;
+  background-position-y: 64px;
+  
+  --grey: #CCC0BE;
+  --red1: #A91314;
+  --red2: #780D0F;
+  --red3: #CB7172;
+  --pink1: #E08848;
+  --pink2: #9D5F32;
+  --pink3: #ECB891;
+
+  margin: auto;
+
+  text-align: center;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  padding: 0;
+  min-height: calc(100vh - 60px);
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+h1 {
+  font-size: 45px;
+  line-height: 52px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 28px;
+  line-height: 36px;
+}
+
+h3 {
+  font-size: 22px;
+  line-height: 28px;
+}
+
+h4 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+section {
+  padding: 0;
+  min-height: 80vh;
+}
+
+.red3 {
+  color: var(--red3);
+}
+
+.phone-only {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .phone-only {
+    display: block;
+    margin-bottom: 6vh;
+  }
+}

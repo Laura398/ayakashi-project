@@ -1,0 +1,112 @@
+#landing {
+    width: 100vw;
+    min-height: 100vh;
+    margin: auto;
+    margin-top: -70px;
+    background-color: #010100;
+    background-image: url('/assets/landing_page_bg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+#landing hr {
+    width: 45%;
+}
+
+#landing h1 {
+    margin-top: 20vh;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+#landing h2 {
+    font-weight: 400;
+    color: #fff;
+    margin-top: 2rem;
+}
+
+#landing #white-band {
+    width: 50%;
+    height: 50px;
+    background-color: #fff;
+    margin: auto;
+    margin-top: 3rem;
+}
+
+#landing .scroll-down {
+    margin-bottom: 5vh;
+    font-size:xx-large;
+}
+
+#landing #story-container .scroll-down {
+    margin-top: -5vh;
+}
+
+#landing #title .scroll-down {
+    margin-top: 20vh;
+}
+
+#landing .scroll-down a:hover {
+    cursor: pointer;
+}
+
+#landing-story {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.landing-story-element {
+    width: 30%;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    #landing {
+        margin-top: -20px;
+    }
+
+    #landing hr {
+        width: 80%;
+    }
+
+    #landing h1 {
+        margin-top: 20vh;
+    }
+
+    #landing h2 {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    #landing > #title > h1 {
+        margin-top: 40vh;
+    }
+
+    #landing #white-band {
+        width: 100%;
+    }
+
+    #landing-story {
+        flex-direction: column;
+    }
+
+    .landing-story-element {
+        width: 80%;
+    }
+
+    #landing #title .scroll-down {
+        margin-top: 5vh;
+    }
+
+    #landing #story-container .scroll-down {
+        margin-top: 5vh;
+    }
+}

@@ -1,0 +1,35 @@
+header {
+    position: relative;
+    margin: 0;
+    height: 60px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    border-bottom: solid 4px var(--red1);
+    z-index: 1000;
+}
+
+.header-landing-page {
+    position: relative;
+    background-color: transparent;
+    border-bottom: none;
+}
+
+nav ol {
+    margin: 0;
+}
+
+nav ol li {
+    display: inline-block;
+    margin: 20px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav img {
+    position: absolute;
+    left: 30px;
+}

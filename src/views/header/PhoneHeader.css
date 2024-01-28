@@ -1,0 +1,40 @@
+#accordion {
+    position: relative;
+    margin: 0;
+    height: 60px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    border-bottom: solid 4px var(--red1);
+    z-index: 100;
+}
+
+#accordion a {
+    position: absolute;
+    right: 20px;
+    top: 0;
+}
+
+#accordion #accordion-logo {
+    position: absolute;
+    left: -80vw;
+    margin-left: 5vw;
+    top: 0;
+}
+
+#accordion #accordion-details {
+    min-height: 50vh;
+    background-color: black;
+    color: white;
+}
+
+#header-fb {
+    margin-top: 20px;
+    width: 80vw;
+    height: 60px;
+    /* background-color: white; */
+    /* color: black; */
+    /* text-transform: uppercase; */
+    color: white;
+    /* font-size: 1.5rem; */
+}
