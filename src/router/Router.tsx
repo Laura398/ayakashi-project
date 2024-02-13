@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, HashRouter } from 'react-router-dom';
 import Home from '../views/home/Home';
 import ConfidentialityPolicy from '../views/confidentiality-policy/ConfidentialityPolicy';
 import Landing from '../views/landing/Landing';
@@ -9,6 +9,7 @@ import Team from '../views/team/Team';
 
 export default function Router() {
     return (
+        <HashRouter>
         <Routes>
             <Route path="/" element={<Landing />} />
             <Route path="/home" element={<Home />} />
@@ -24,5 +25,6 @@ export default function Router() {
 
             {/* <Route path="*" element={<h1 style={{marginTop: "100px"}}>ERROR : The page you're looking for doesn't exist.</h1>} /> */}
         </Routes>
+        </HashRouter>
     );
 }
