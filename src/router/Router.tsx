@@ -22,7 +22,7 @@ export default function Router() {
 
             <Route path="/map" element={<h1>Map</h1>} />
 
-            <Route path="*" element={<h1 style={{marginTop: "100px"}}>ERROR : The page you're looking for doesn't exist.</h1>} />
+            {/* <Route path="*" element={<h1 style={{marginTop: "100px"}}>ERROR : The page you're looking for doesn't exist.</h1>} /> */}
         </Routes>
     );
 }
