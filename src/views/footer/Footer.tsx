@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import './Footer.css'
 
 export default function Footer() {
@@ -5,9 +6,9 @@ export default function Footer() {
         <footer>
             <p>
                 © 2023 - Ayakashi Project. All rights reserved. <br />
-                <a href="/confidentiality-policy">Confidentiality policy</a>
-                <a href="/map">Website Map</a>
-                <a href="/team">Contacts</a>
+                <Link to="/confidentiality-policy">Confidentiality policy</Link>
+                <Link to="/map">Website Map</Link>
+                <Link to="/team">Contacts</Link>
             </p>
         </footer>
     );

@@ -68,6 +68,16 @@
     text-align: center;
 }
 
+#landing-story-image {
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    background-image: url("/assets/landing-story.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 @media screen and (max-width: 768px) {
     #landing {
         margin-top: -20px;
@@ -108,5 +118,11 @@
 
     #landing #story-container .scroll-down {
         margin-top: 5vh;
+    }
+
+    #landing-story-image {
+        width: 300px;
+        height: 200px;
+        margin: auto;
     }
 }

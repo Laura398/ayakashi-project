@@ -1,12 +1,10 @@
+import { Link, useLocation } from 'react-router-dom';
 import './Header.css'
 import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
 
 export default function Header() {
-    const href = window.location.href;
-    
-    const path = href.split("/")[3];
-
-    const isLandingPage = path === "";
+    const location = useLocation();
+    const isLandingPage = location.pathname === "/";
 
     return (
         <header className={
@@ -15,14 +13,14 @@ export default function Header() {
             <nav className={
             isLandingPage ? "header-landing-page" : "header"
           }>
-                <a href="/"><img src={"/assets/logo.png"} alt="logo" height="60"></img></a>
+                <div className="logo" onClick={() => {window.location.href = "/";}}></div>
                 <ol>
-                    <li><a href="/home">Home</a></li>
-                    <li><a href="/resume">Resume</a></li>
-                    <li><a href="/characters">Characters</a></li>
-                    <li><a href="/functionnalities">Fonctionnalities</a></li>
-                    <li><a href="/team">Who are we?</a></li>
-                    <li><a href="https://www.facebook.com/profile.php?id=100092977179744" style={{position: 'relative'}}>
+                    <li><Link to="/home">Home</Link></li>
+                    <li><Link to="/resume">Resume</Link></li>
+                    <li><Link to="/characters">Characters</Link></li>
+                    <li><Link to="/functionnalities">Fonctionnalities</Link></li>
+                    <li><Link to="/team">Who are we?</Link></li>
+                    <li><Link to="https://www.facebook.com/profile.php?id=100092977179744" style={{position: 'relative'}}>
                         <FacebookRoundedIcon
                             fontSize='large'
                             sx={[
@@ -30,7 +28,7 @@ export default function Header() {
                                 { '&:hover': { color: 'var(--red3)', fontSize: '40px' } }
                             ]}
                         />
-                    </a></li>
+                    </Link></li>
                 </ol>
             </nav>
         </header>

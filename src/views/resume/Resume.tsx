@@ -3,7 +3,7 @@ import './Resume.css';
 export default function Resume() {
     return (
         <section id="resume">     
-            <img id="story-bg-character" src="/assets/story-bg-character.png" alt="character-bg" width={300} />       
+            <div id='story-bg-character'></div>        
             <div id="resume-container">
                 <h3>What would you do if the boundary between you and the spirits disappeared?</h3>
 

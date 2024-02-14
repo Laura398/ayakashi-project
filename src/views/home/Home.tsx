@@ -12,9 +12,7 @@ export default function Home() {
 
     return (
         <section id="home">
-            <div id="home-img">
-                <img src={"/assets/home-img.png"} alt="game-image" width={"100%"} />
-            </div>
+            <div id="home-img"></div>
             <div id="home-content">
 
                 <h1>Ayakashi Project</h1>

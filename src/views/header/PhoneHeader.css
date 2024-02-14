@@ -9,12 +9,6 @@
     z-index: 100;
 }
 
-#accordion a {
-    position: absolute;
-    right: 20px;
-    top: 0;
-}
-
 #accordion #accordion-logo {
     position: absolute;
     left: -80vw;
@@ -28,13 +22,36 @@
     color: white;
 }
 
+#accordion #accordion-details .button {
+    width: 75vw;
+    height: 35px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    /* font-weight: bold; */
+}
+
 #header-fb {
     margin-top: 20px;
     width: 80vw;
     height: 60px;
-    /* background-color: white; */
-    /* color: black; */
-    /* text-transform: uppercase; */
     color: white;
-    /* font-size: 1.5rem; */
 }
+
+.logo {
+    position: absolute;
+    left: 10px;
+    top: 0;
+    color: white;
+    background-image: url("/assets/logo.png");
+    height: 60px;
+    width: 40px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }

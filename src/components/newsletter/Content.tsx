@@ -49,7 +49,8 @@ export default function NewsletterContent() {
                 className="input"
                 >
 
-                <Input placeholder="Input here..." sx={{ marginTop: '-5px', marginLeft: '5px', padding: '0', border: 'none', background: 'none'}} onChange={changeEmail} className="input" />
+                <Input className="input" placeholder="Input here..."
+                sx={{marginTop: '-5px', marginLeft: '5px', padding: '0', border: 'none', background: 'none'}} onChange={changeEmail} />
             </Paper>
 
             <BaseButton children="Subscribe" onClick={check} className="newsletter-button" style={{ width: '100%', marginTop: '5px', backgroundColor: 'var(--red1)', color: 'white', textTransform: 'none', borderRadius: '10px' }} />

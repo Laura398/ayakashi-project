@@ -1,7 +1,10 @@
 #resume {
     position: relative;
+    width: 100vw;
+    height: 100vh;
     padding: 30px;
-    background-image: url('assets/story-bg.jpg');
+    /* background: url(assets/story-bg.jpg) right bottom no-repeat, url(paper.gif) left top repeat; */
+    background-image: url('/assets/story-bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -14,6 +17,12 @@
     top: 100px;
     left: 0;
     z-index: 1;
+    background-image: url("/assets/story-bg-character.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 380px;
+    height: 750px;
 }
 
 #resume-container {

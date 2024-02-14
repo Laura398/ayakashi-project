@@ -21,7 +21,8 @@ export default function Story() {
                         Between being a college student at day, you are also working as a part timer in a sketchy detective agency that helps spirits and humans to settle conflicts born between them.</p>
                 </div>
                 <div className="landing-story-element">
-                    <img src={"/assets/landing-story.png"} alt="game-image" width={"100%"} />
+                    {/* <img src={"/assets/landing-story.png"} alt="game-image" width={"100%"} /> */}
+                    <div id="landing-story-image"></div>
                 </div>
             </div>
 
