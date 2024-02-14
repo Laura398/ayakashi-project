@@ -9,6 +9,7 @@
   background-color: #280601;
   background-image: url('/assets/background-ap.png');
   background-size: cover;
+  background-position-x: center;
   background-position-y: 64px;
   
   --grey: #CCC0BE;
