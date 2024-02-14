@@ -23,7 +23,7 @@ export default function ScrollToTopFab() {
             position: "fixed",
             bottom: 32,
             right: 32,
-            zIndex: 1,
+            zIndex: 100,
           }}
         >
           <Fab

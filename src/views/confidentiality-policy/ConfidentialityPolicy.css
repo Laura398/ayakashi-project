@@ -2,3 +2,9 @@
     text-align: left;
     margin-top: 50px;
 }
+
+@media screen and (max-width: 768px) {
+    #confidentiality-policy {
+        padding-bottom: 5%;
+    }
+}
