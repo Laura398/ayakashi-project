@@ -26,7 +26,7 @@ export default function PhoneHeader() {
             <MenuIcon fontSize='large' sx={{ color: 'white', marginTop: '10px' }} />}
           id="icon"
         >
-            <Link to="/"><div className="logo"></div></Link>
+            <Link to="/"><div className="logo-phone-header"></div></Link>
         </AccordionSummary>
         <AccordionDetails id="accordion-details">
             <Button><Link to="/home" className='button'>Home</Link></Button>

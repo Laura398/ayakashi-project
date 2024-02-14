@@ -13,7 +13,7 @@ export default function Header() {
             <nav className={
             isLandingPage ? "header-landing-page" : "header"
           }>
-               <Link to="/"><div className="logo"></div></Link>
+               <Link to="/"><div className="logo-header"></div></Link>
                 <ol>
                     <li><Link to="/home">Home</Link></li>
                     <li><Link to="/resume">Resume</Link></li>

@@ -1,12 +1,13 @@
 header {
     position: relative;
     margin: 0;
-    height: 60px;
+    height: 80px;
     width: 100%;
     background-color: black;
     color: white;
     border-bottom: solid 4px var(--red1);
     z-index: 1000;
+    font-size: larger;
 }
 
 .header-landing-page {
@@ -17,6 +18,7 @@ header {
 
 nav ol {
     margin: 0;
+    margin-top: 20px;
 }
 
 nav ol li {
@@ -24,13 +26,14 @@ nav ol li {
     margin: 20px;
 }
 
-.logo {
+.logo-header {
     position: absolute;
-    left: 30px;
+    left: 50px;
+    top: -10px;
     color: white;
     background-image: url("/assets/logo.png");
-    height: 60px;
-    width: 40px;
+    height: 80px;
+    width: 60px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
