@@ -13,7 +13,7 @@ export default function Header() {
             <nav className={
             isLandingPage ? "header-landing-page" : "header"
           }>
-                <div className="logo" onClick={() => {window.location.href = "/";}}></div>
+               <Link to="/"><div className="logo"></div></Link>
                 <ol>
                     <li><Link to="/home">Home</Link></li>
                     <li><Link to="/resume">Resume</Link></li>
