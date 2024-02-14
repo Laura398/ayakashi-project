@@ -1,9 +1,7 @@
 #resume {
     position: relative;
     width: 100vw;
-    height: 100vh;
     padding: 30px;
-    /* background: url(assets/story-bg.jpg) right bottom no-repeat, url(paper.gif) left top repeat; */
     background-image: url('/assets/story-bg.jpg');
     background-size: cover;
     background-position: center;
