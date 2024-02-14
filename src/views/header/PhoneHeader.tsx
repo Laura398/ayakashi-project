@@ -26,7 +26,7 @@ export default function PhoneHeader() {
             <MenuIcon fontSize='large' sx={{ color: 'white', marginTop: '10px' }} />}
           id="icon"
         >
-            <div className="logo" onClick={() => {window.location.href = "/"}}></div>
+            <Link to="/"><div className="logo"></div></Link>
         </AccordionSummary>
         <AccordionDetails id="accordion-details">
             <Button><Link to="/home" className='button'>Home</Link></Button>
@@ -34,7 +34,9 @@ export default function PhoneHeader() {
             <Button><Link to="/characters" className='button'>Characters</Link></Button>
             <Button><Link to="/functionnalities" className='button'>Fonctionnalities</Link></Button>
             <Button><Link to="/team" className='button'>Who are we?</Link></Button>
-            <Button id="header-fb" onClick={() => {window.location.href = "https://www.facebook.com/profile.php?id=100092977179744"}}><FacebookRoundedIcon fontSize='large' /></Button>
+            <Button id="header-fb">
+              <a target="_blank" href="https://www.facebook.com/profile.php?id=100092977179744"><FacebookRoundedIcon fontSize='large' /></a>
+            </Button>
         </AccordionDetails>
       </Accordion>
     </div>
