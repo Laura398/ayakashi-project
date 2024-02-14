@@ -22,6 +22,9 @@
   margin: auto;
 
   text-align: center;
+
+  --Input-focused: 0 !important;
+
 }
 
 body {

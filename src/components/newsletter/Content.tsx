@@ -3,7 +3,7 @@ import Input from '@mui/joy/Input';
 import BaseButton from "../buttons/BaseButton";
 import AlertMessage from "../alerts/AlertMessage";
 import React from "react";
-
+  
 export default function NewsletterContent() {
     const [showAlert, setShowAlert] = React.useState(false);
     const [alertMessage, setAlertMessage] = React.useState('');
@@ -11,7 +11,7 @@ export default function NewsletterContent() {
     const [email, setEmail] = React.useState('');
 
     function changeEmail(event: React.ChangeEvent<HTMLInputElement>) {
-        setEmail(event.target.value);
+            setEmail(event.target.value);
     }
 
     function check() {
@@ -49,8 +49,10 @@ export default function NewsletterContent() {
                 className="input"
                 >
 
-                <Input className="input" placeholder="Input here..."
-                sx={{marginTop: '-5px', marginLeft: '5px', padding: '0', border: 'none', background: 'none'}} onChange={changeEmail} />
+                <input
+                className="input"
+                placeholder="Email here..."
+                onChange={changeEmail} />
             </Paper>
 
             <BaseButton children="Subscribe" onClick={check} className="newsletter-button" style={{ width: '100%', marginTop: '5px', backgroundColor: 'var(--red1)', color: 'white', textTransform: 'none', borderRadius: '10px' }} />
