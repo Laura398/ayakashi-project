@@ -9,7 +9,7 @@ export default function Story() {
 
     return (
         <div id="story-container">
-            <h1>The Story</h1>
+            <h2>The Story</h2>
             
             
             <div id="landing-story">

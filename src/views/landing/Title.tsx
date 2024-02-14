@@ -14,7 +14,7 @@ export default function Title() {
             
             <h2>What would you do if the boundary between you and the spirits disappeared?</h2>
 
-            <h2><b>Coming soon on PC...</b></h2>
+            <h3><b>Coming soon on PC...</b></h3>
 
             <div className="scroll-down">
                 <a onClick={scrollToStory}><FontAwesomeIcon icon={faChevronDown} /></a>

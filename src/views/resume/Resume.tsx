@@ -15,7 +15,7 @@ export default function Resume() {
     return (
         <section id="resume">     
             <div id='story-bg-character'></div> 
-            <TextContainer content={content} />
+            <TextContainer content={content} className='width-50' />
         </section>
     );
 }

@@ -1,0 +1,26 @@
+#functionnalities h1 {
+    font-family: 'Exo', Arial, sans-serif;
+}
+
+#customization h2 {
+    text-align: left;
+    margin-top: 50px;
+}
+
+#custom-image {
+    width: 60%;
+    /* Height is image size */
+    height: 250px;
+    background-image: url("/assets/custom.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#custom-text {
+    width: 40%;
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

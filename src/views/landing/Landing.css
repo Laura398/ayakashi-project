@@ -22,6 +22,15 @@
 }
 
 #landing h2 {
+    font-family: 'Exo', Arial, sans-serif;
+    margin-top: 20vh;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+#landing h3 {
+    font-family: 'Exo', Arial, sans-serif;
     font-weight: 400;
     color: #fff;
     margin-top: 2rem;

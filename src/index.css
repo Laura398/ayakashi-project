@@ -1,7 +1,7 @@
 :root {
   width: 100%;
   min-height: 100vh;
-  font-family: Arial, sans-serif;
+  font-family: 'Exo', Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
 
@@ -37,22 +37,26 @@ body::-webkit-scrollbar {
 }
 
 h1 {
+  font-family: 'Caveat Brush';
   font-size: 45px;
   line-height: 52px;
   font-weight: bold;
 }
 
 h2 {
+  font-family: 'Caveat Brush';
   font-size: 28px;
   line-height: 36px;
 }
 
 h3 {
+  font-family: 'Caveat Brush';
   font-size: 22px;
   line-height: 28px;
 }
 
 h4 {
+  font-family: 'Caveat Brush';
   font-size: 16px;
   line-height: 24px;
   font-weight: bold;
@@ -61,6 +65,14 @@ h4 {
 section {
   padding: 0;
   min-height: 80vh;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  /* align-items: center; */
+  justify-content:space-between;
+  flex-wrap: wrap;
 }
 
 .red3 {
@@ -75,5 +87,10 @@ section {
   .phone-only {
     display: block;
     margin-bottom: 6vh;
+  }
+
+  .flex {
+    flex-direction: column;
+    align-items: center;
   }
 }

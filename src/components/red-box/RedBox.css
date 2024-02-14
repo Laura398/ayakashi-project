@@ -17,6 +17,10 @@
 }
 
 
+#red-box-title h3 {
+    font-family: 'Exo', Arial, sans-serif;
+}
+
 @media screen and (max-width: 768px) {
     #red-box-container {
         max-width: 95%;

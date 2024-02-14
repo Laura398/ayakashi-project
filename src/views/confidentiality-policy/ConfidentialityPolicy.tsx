@@ -3,12 +3,10 @@ import './ConfidentialityPolicy.css';
 
 export default function ConfidentialityPolicy() {
     const href = window.location.href;
-    const hrefHome = href.split('/confidentiality-policy')[0];
+    const hrefHome = href.split('/#')[0];
 
     const content =
     <div>
-        <h1>Confidentiality Policy</h1>
-
         <h2>Who are we?</h2>
 
         <p>The address of our website is: {hrefHome}</p>
@@ -58,7 +56,8 @@ export default function ConfidentialityPolicy() {
 
     return (
         <section id="confidentiality-policy">
-            <TextContainer content={content} />
+            <h1>Confidentiality Policy</h1>
+            <TextContainer content={content} className="width-70" />
         </section>
     );
 }
