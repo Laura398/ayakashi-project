@@ -1,4 +1,4 @@
-import { Route, HashRouter, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import Home from '../views/home/Home';
 import ConfidentialityPolicy from '../views/confidentiality-policy/ConfidentialityPolicy';
 import Landing from '../views/landing/Landing';
