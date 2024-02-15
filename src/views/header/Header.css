@@ -1,6 +1,8 @@
 header {
     position: relative;
     margin: 0;
+    margin-top: 0;
+    padding-top: 10px;
     height: 80px;
     width: 100%;
     background-color: black;
@@ -18,7 +20,7 @@ header {
 
 nav ol {
     margin: 0;
-    margin-top: 20px;
+    /* margin-top: 10px; */
 }
 
 nav ol li {
@@ -29,7 +31,7 @@ nav ol li {
 .logo-header {
     position: absolute;
     left: 50px;
-    top: -10px;
+    top: 5px;
     color: white;
     background-image: url("/assets/logo.png");
     height: 80px;
@@ -43,6 +45,10 @@ nav ol li {
 a {
     color: white;
     text-decoration: none;
+}
+
+a:hover {
+    color: var(--red3);
 }
 
 header nav img {

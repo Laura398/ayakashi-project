@@ -1,0 +1,114 @@
+#team {
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+#team h1 {
+    font-family: 'Exo', Arial, sans-serif;
+    font-size: 40px;
+}
+
+#team p {
+    text-align: left;
+}
+
+#team hr {
+    width: 45%;
+    margin: 50px auto;
+}
+
+#members {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.member {
+    width: 35%;
+    margin: 10px;
+    padding: 10px;
+    background-color: var(--red2);
+    color: white;
+    text-align: center;
+}
+
+.member p {
+    margin: auto;
+}
+
+.member-image {
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 10px auto;
+}
+
+.oshina {
+    background-image: url('/assets/oshina.png');
+}
+
+.yuru {
+    background-image: url('/assets/yuru.png');
+}
+
+#members hr {
+    margin: 0 auto 20px auto;
+}
+
+#contact-email {
+    width: 100%;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border: 2px solid white !important;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.contact-message {
+    margin: 10px auto;
+    width: 100% !important;
+    background-color: black;
+    border: 2px solid white !important;
+    color: white !important;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#contact .label {
+    width: 100%;
+    margin-left: -10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    color: white;
+    text-align: left;
+    align-items: left;
+    font-size: "20px"
+}
+
+@media screen and (max-width: 768px) {
+    #team {
+        width: 95%;
+    }
+
+    .member {
+        width: 95%;
+    }
+
+    #contact-email {
+        width: 90%;
+    }
+
+    #contact .label {
+        width: 90%;
+        justify-content: center;
+        margin-left: 0
+    }
+}

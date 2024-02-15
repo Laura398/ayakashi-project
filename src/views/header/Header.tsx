@@ -25,7 +25,7 @@ export default function Header() {
                             fontSize='large'
                             sx={[
                                 { position: 'absolute', verticalAlign: 'middle', marginTop: '-5px' },
-                                { '&:hover': { color: 'var(--red3)', fontSize: '40px' } }
+                                { '&:hover': { color: 'var(--red3)', fontSize: '40px', marginTop: "-8px" } }
                             ]}
                         />
                     </Link></li>
