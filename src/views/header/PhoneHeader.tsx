@@ -10,30 +10,32 @@ import { Link } from 'react-router-dom';
 import React from 'react';
 
 export default function PhoneHeader() {
-    const [expanded, setExpanded] = React.useState<boolean>(false);
-    
-    const handleChange = () => () => {
-        const isExpanded = expanded ? false : true;
-        setExpanded(isExpanded);
-    };
+  const [expand, setExpand] = React.useState(false);
+  const toggleAcordion = () => {
+    setExpand((prev) => !prev);
+  };
+
+  const closeAccordion = () => {
+      setExpand(false);
+  };
 
   return (
     <div>
-      <Accordion id="accordion" onChange={handleChange()}>
+      <Accordion id="accordion" expanded={expand}>
         <AccordionSummary
-          expandIcon={expanded ?
-            <CloseIcon fontSize='large' sx={{ color: 'white', marginTop: '10px' }} /> :
-            <MenuIcon fontSize='large' sx={{ color: 'white', marginTop: '10px' }} />}
+          expandIcon={expand ?
+            <CloseIcon fontSize='large' sx={{ color: 'white', marginTop: '10px' }} onClick={toggleAcordion} /> :
+            <MenuIcon fontSize='large' sx={{ color: 'white', marginTop: '10px' }} onClick={toggleAcordion} />}
           id="icon"
         >
-            <Link to="/"><div className="logo-phone-header"></div></Link>
+            <Link to="/" onClick={closeAccordion}><div className="logo-phone-header"></div></Link>
         </AccordionSummary>
         <AccordionDetails id="accordion-details">
-            <Button><Link to="/home" className='button'>Home</Link></Button>
-            <Button><Link to="/resume" className='button'>Resume</Link></Button>
-            <Button><Link to="/characters" className='button'>Characters</Link></Button>
-            <Button><Link to="/functionnalities" className='button'>Fonctionnalities</Link></Button>
-            <Button><Link to="/team" className='button'>Who are we?</Link></Button>
+            <Button><Link to="/home" className='button' onClick={toggleAcordion}>Home</Link></Button>
+            <Button><Link to="/resume" className='button' onClick={toggleAcordion}>Resume</Link></Button>
+            <Button><Link to="/characters" className='button' onClick={toggleAcordion}>Characters</Link></Button>
+            <Button><Link to="/functionnalities" className='button' onClick={toggleAcordion}>Fonctionnalities</Link></Button>
+            <Button><Link to="/team" className='button' onClick={toggleAcordion}>Who are we?</Link></Button>
             <Button id="header-fb">
               <a target="_blank" href="https://www.facebook.com/profile.php?id=100092977179744"><FacebookRoundedIcon fontSize='large' /></a>
             </Button>
