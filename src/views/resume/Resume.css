@@ -26,7 +26,7 @@
 @media screen and (max-width: 768px) {
     #resume {
         min-height:5vh;
-        padding: 5% 1%;
+        padding: 5% 0;
     }
 
     #story-bg-character {

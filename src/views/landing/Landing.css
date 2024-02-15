@@ -89,7 +89,9 @@
 
 @media screen and (max-width: 768px) {
     #landing {
+        width: 90vw;
         margin-top: -20px;
+        padding: 0 5vw;
     }
 
     #landing hr {

@@ -98,12 +98,17 @@
         width: 95%;
     }
 
+    #prez {
+        width: 90%;
+        margin: auto;
+    }
+
     .member {
         width: 95%;
     }
 
     #contact-email {
-        width: 90%;
+        width: 100%;
     }
 
     #contact .label {

@@ -52,7 +52,7 @@ export default function Contact() {
                     justifyContent: 'center',
                     alignItems: 'center',
                     textAlign: 'left',
-                    '& .MuiTextField-root': { m: 1, width: '25ch' },
+                    '@media (max-width: 768px)': { width: '80%', marginLeft: "7%"},
                 }}
                 noValidate
                 autoComplete="off"
