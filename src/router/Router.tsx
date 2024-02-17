@@ -7,6 +7,7 @@ import Characters from '../views/characters/Characters';
 import Functionnalities from '../views/functionnalities/Functionnalities';
 import Team from '../views/team/Team';
 import Map from '../views/map/Map';
+import NotFound from '../views/404/404';
 
 export default function Router() {
     return (
@@ -23,7 +24,7 @@ export default function Router() {
 
             <Route path="/map" element={<Map />} />
 
-            <Route path="*" element={<h1 style={{marginTop: "100px"}}>ERROR : The page you're looking for doesn't exist.</h1>} />
+            <Route path="*" element={<NotFound />} />
         </Routes>
     );
 }

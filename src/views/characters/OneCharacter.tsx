@@ -16,7 +16,7 @@ export default function OneCharacter(props: {character: Character}) {
     return (
         <section id="character">
             <div id="character-img" className="character-content">
-                <img className="character-img" src={`https://raw.githubusercontent.com/Laura398/ayakashi-project/characters/public/assets/${character.image}`} alt={character.name} />
+                <img className="character-img" src={`https://raw.githubusercontent.com/Laura398/ayakashi-project/main/public/assets/${character.image}`} alt={character.name} />
             </div>
             <div id="character-data" className="character-content">
                 <RedBox title={title} content={content} />
