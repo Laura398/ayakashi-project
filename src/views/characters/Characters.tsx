@@ -91,7 +91,7 @@ export default function Characters() {
                         className='character-icon'
                         sx={{margin: "20px"}}>
                             <img
-                                src={`https://raw.githubusercontent.com/Laura398/ayakashi-project/characters/public/assets/${character.icon}`}
+                                src={`https://raw.githubusercontent.com/Laura398/ayakashi-project/main/public/assets/${character.icon}`}
                                 alt={character.name}
                                 loading="lazy"
                                 className={`characters-icons toggle-img-${character.id}`}
@@ -107,7 +107,7 @@ export default function Characters() {
                     <div className="character-phone" key={index} onClick={changeSelect}>
                         <img
                             key={index}
-                            src={`https://raw.githubusercontent.com/Laura398/ayakashi-project/characters/public/assets/${character.icon}`}
+                            src={`https://raw.githubusercontent.com/Laura398/ayakashi-project/main/public/assets/${character.icon}`}
                             alt={character.name}
                             loading="lazy"
                             className={`characters-icons toggle-img-${character.id}`}
