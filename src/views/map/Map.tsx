@@ -1,18 +1,6 @@
-import { Avatar, Box, Checkbox, FormControlLabel, FormGroup, Grid, IconButton, List, ListItem, ListItemAvatar, ListItemIcon, ListItemText, Typography, styled } from "@mui/material";
+import { Box, List, ListItem } from "@mui/material";
 import TextContainer from "../../components/text-container/TextContainer";
-import React from "react";
-import FolderIcon from '@mui/icons-material/Folder';
-import DeleteIcon from '@mui/icons-material/Delete';
 import { Link } from "react-router-dom";
-
-function generate(element: React.ReactElement) {
-    return [0, 1, 2].map((value) =>
-      React.cloneElement(element, {
-        key: value,
-      }),
-    );
-  }
-
 
 export default function Map() {
     const content = (
