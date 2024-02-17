@@ -6,6 +6,7 @@ import Resume from '../views/resume/Resume';
 import Characters from '../views/characters/Characters';
 import Functionnalities from '../views/functionnalities/Functionnalities';
 import Team from '../views/team/Team';
+import Map from '../views/map/Map';
 
 export default function Router() {
     return (
@@ -20,7 +21,7 @@ export default function Router() {
             <Route path="/functionnalities" element={<Functionnalities />} />
             <Route path="/team" element={<Team />} />
 
-            <Route path="/map" element={<h1>Map</h1>} />
+            <Route path="/map" element={<Map />} />
 
             <Route path="*" element={<h1 style={{marginTop: "100px"}}>ERROR : The page you're looking for doesn't exist.</h1>} />
         </Routes>
