@@ -60,9 +60,7 @@ export default function Characters() {
     };
 
     const changeSelect = (event: React.MouseEvent<HTMLDivElement>) => {
-        const target = event.target as HTMLDivElement;
-        console.log(target);
-        
+        const target = event.target as HTMLDivElement;        
         const id = target.classList[1].split('-')[2];
         setAlignment(parseInt(id));
         setCharacter(characters.find((character) => character.id === parseInt(id)) as Character);

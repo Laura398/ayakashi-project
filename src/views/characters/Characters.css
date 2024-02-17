@@ -68,7 +68,12 @@
 }
 
 @media (max-width: 768px) {
+    #characters {
+        padding-bottom: 100px;
+    }
+
     #character {
+        width: 100%;
         flex-direction: column;
     }
 
@@ -83,6 +88,22 @@
         align-items: center;
         margin: 10px;
         flex-wrap: wrap;
+    }
+
+    .character-content {
+        width: 100%;
+    }
+
+    #character-img {
+        width: 95%;
+        height: 80vh;
+        
+    }
+
+    #character-data {
+        width: 95;
+        margin-top: 0;
+        background-color: black;
     }
 
     .character-phone {
